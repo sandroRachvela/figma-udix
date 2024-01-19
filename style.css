@@ -1,0 +1,163 @@
+body{
+    background-color:blue;
+    
+}
+.div {
+    padding: 170px 130px 229px 375px;
+}
+
+
+.header, .nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 24px;
+}
+.svg1 {
+    margin-top: 18px;
+}
+.section1 {
+    display: flex;
+    flex-direction: column;
+
+    gap: 40px;
+    
+   
+}
+
+.logo {
+    gap: 5px;
+}
+.a {
+    margin-top: 40px;
+    color: #FFA3A3;
+}
+.card2 {
+ 
+    padding: 30px 150px;
+    background-color: aliceblue;
+    position: relative;
+    left: 238px;
+    
+}
+.section2 {
+    display: flex;
+    gap: 40px;
+}
+h1{
+    color: var(--General-Light-Red, #FFA3A3);
+text-shadow: 0px 2px 0px rgba(34, 34, 34, 0.10);
+/* Desktop / H1 / Bold */
+font-family: Montserrat;
+font-size: 60px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: capitalize;
+}
+.topmarket{
+    color: var(--General-Light, #FFF);
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Raleway;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 150% */
+}
+.meorep{
+    color: var(--General-Light, #FFF);
+/* Desktop / Subtitle / Regular */
+font-family: Raleway;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 38px; /* 158.333% */
+min-width: 470px;
+}
+button{
+    color: var(--General-Blue, #381DDB);
+
+/* Desktop / Menu */
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 20px; /* 142.857% */
+text-transform: uppercase;
+}
+.b2{
+    border: 1px solid var(--General-Blue, #381DDB);
+    width:90px;
+    height: 50px;
+}
+.b1{
+    border: none;
+width: 100px;
+}
+  
+.h3{
+    color: var(--General-Dark, #222);
+font-feature-settings: 'clig' off, 'liga' off;
+
+/* Desktop / H3 */
+font-family: Montserrat;
+font-size: 24px;
+font-style: normal;
+font-weight: 800;
+line-height: 38px; /* 158.333% */
+
+}
+.auth{
+    background-color: #FFFFFF;
+    width: 470px;
+   height: 650px;
+flex-shrink: 0;
+fill: #FFF;
+filter: drop-shadow(0px 20px 100px rgba(34, 34, 34, 0.15));
+display: flex;
+flex-direction: column;
+position: relative;
+right: 500px;
+top: 170px;
+padding: 60px;
+gap: 40px;
+}  
+
+.b3{
+    background: var(--General-Blue, #381DDB);
+box-shadow: 0px 10px 30px 0px rgba(56, 29, 219, 0.20);
+color: #FFFFFF;
+padding: 14px ;
+width:130px
+
+
+
+
+}
+
+input{
+    width: 260px;
+height: 48px;
+}
+
+
+.lastImg {
+position: relative;
+left: 200px;
+top: -131px;
+
+
+    width: 160px;
+height: 160.001px;
+flex-shrink: 0;
+}
+
+@media screen and (min-width: 1000px) {
+    .div {
+        padding: 170px 80px 229px 195px;
+    }
+    
+
+
+}
+
