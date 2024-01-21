@@ -3,9 +3,13 @@ body{
     
 }
 .div {
-    padding: 170px 130px 229px 375px;
+    padding: 170px 130px 229px 190px;
 }
-
+.container1 {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    min-width: 100%
+}
 
 .header, .nav {
     display: flex;
@@ -36,8 +40,9 @@ body{
  
     padding: 30px 150px;
     background-color: aliceblue;
-    position: relative;
-    left: 238px;
+    min-width: 100%;
+    /* position: relative;
+    left: 238px; */
     
 }
 .section2 {
@@ -117,7 +122,7 @@ filter: drop-shadow(0px 20px 100px rgba(34, 34, 34, 0.15));
 display: flex;
 flex-direction: column;
 position: relative;
-right: 500px;
+right: 650px;
 top: 170px;
 padding: 60px;
 gap: 40px;
@@ -151,13 +156,97 @@ top: -131px;
 height: 160.001px;
 flex-shrink: 0;
 }
+.b4{
+    display: none;
+    
+}
 
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 500px) {
+.auth {
+    right:380px
+}
+}
+
+@media screen and (max-width: 1300px) {
     .div {
-        padding: 170px 80px 229px 195px;
+        padding: 49px 120px 336px 49px;
+    }
+    .auth {
+        top:  650px;
+    }
+    .card2 {
+        background-color: blue
+    }
+    .section1 {
+        position: absolute;
+        margin-top: 30px;
     }
     
 
+    .b1 {
+        padding: 5px 30px;
+    }
+    .b2 {
+        padding: 11px 30px;
+    }
+    .header{
+        padding-left: 39px;
+
+    }
+    .nav{
+        gap: 10px;
+    }
+    /* .b4{
+    
+        display: none;
+    } */
+
 
 }
+
+
+
+   @media screen and (max-width:450px) {
+    .card2{
+        display: none;
+
+    }
+    .header {
+            padding-left: 39px;
+            
+            
+}
+header {
+    min-width: 600px;
+}
+    .nav{
+        display: none;
+    }
+    .auth{
+        top: 700px;
+        right: 80%;
+    }
+    .div {
+        padding-left: 30px;
+        text-align: center;
+    }
+    .b4{
+        display: block;
+        padding: 14px;
+        background-color: blue;
+        color: white;
+        width:100px;
+        margin-top: 15px;
+        /* position: relative;
+        left: 360px;
+        bottom: 36px; */
+        
+         
+        
+    }
+    
+    .section1 {
+        position:absolute;
+    }
+   }
 
