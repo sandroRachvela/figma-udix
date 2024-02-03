@@ -1,14 +1,17 @@
 body{
-    background-color:blue;
-    
+    background-color:white;
+    display: flex;
+    flex-direction: column;
 }
+
 .div {
     padding: 170px 130px 229px 190px;
 }
 .container1 {
     display: grid;
     grid-template-columns: 60% 40%;
-    min-width: 100%
+    min-width: 100%;
+    background-color: blue;
 }
 
 .header, .nav {
@@ -112,6 +115,9 @@ font-weight: 800;
 line-height: 38px; /* 158.333% */
 
 }
+.container1 {
+    position: relative;
+}
 .auth{
     background-color: #FFFFFF;
     width: 470px;
@@ -121,9 +127,11 @@ fill: #FFF;
 filter: drop-shadow(0px 20px 100px rgba(34, 34, 34, 0.15));
 display: flex;
 flex-direction: column;
-position: relative;
-right: 650px;
-top: 170px;
+position: absolute;
+/* left: 650px;
+bottom: 600px; */
+margin-top: 150px;
+transform: translateX(170%);
 padding: 60px;
 gap: 40px;
 }  
@@ -161,26 +169,174 @@ flex-shrink: 0;
     
 }
 
-@media screen and (max-width: 500px) {
-.auth {
-    right:380px
+
+ .imgg{
+    height: 300px;
+    width: 400px;
+ }
+ .sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+gap: 60px;
+
+ }
+ .sec2{
+    
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+
+ }
+ .body-cont{
+    padding-left: 170px;
+    padding-right: 170px;
+    background-color: white;
+    margin-top: 120px;
+ }
+ .img9{
+    height: 150px;
+    width: 150px;
+ }
+ .img99{
+    height: 75px;
+    width: 75px;
+ }
+ .background{
+    height: 100%;
+    width: 400px;
+    background-color: #FFA3A3;
+    padding: 40px;
+ }
+.img98{
+    height: 100px;
+    width: 100px;
 }
+.blackarrow{
+    height: 25px;
+    width: 25px;
+    margin-top: 50px;
+    
+}
+.sec4{
+    margin-top: 200px;
+    gap: 40px;
+}
+.size{
+    height: 20px;
+    width: 20px;
+}
+.alignn{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.gap{
+    gap: 55px;
 }
 
-@media screen and (max-width: 1300px) {
+.nextimg{
+    height: 300px;
+    width: 350px;
+}
+
+
+.sec5{
+    height: 400px;
+    /* width: 1200px; */
+    background-color: black;
+   margin-top: 100px;
+   text-align: center;
+   padding: 50px;
+}
+
+ .ppartofsec5{
+    
+        background-color: black;
+        color: white;
+      
+      
+ }
+ ::placeholder {
+    color: white;
+  }
+
+.b09{
+height: 55px;
+border: none;
+margin-left: 9px;
+}
+.lonelyp{
+    padding-top: 20px;
+}
+
+.but{
+    border: none;
+    height: 35px;
+}
+.but2{
+    border: none;
+    height: 35px;
+}
+
+.justforp{
+    width: 400px;
+}
+
+
+.lastNav{
+    gap: 20px;
+}
+
+
+
+footer{
+    margin-top: 150px;
+    margin-bottom: 90px;
+}
+
+
+.icons{
+    gap: 11px;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.allicons{
+    height: 20px;
+    width: 20px;
+
+}
+
+.lastDiv {
+    justify-content: space-between;
+    
+    display: flex;
+    flex-direction: column
+}
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+    .auth {
+        /* right:380px */
+        position: relative;
+        margin-left: -80%;
+        margin-top: 0;
+    }
     .div {
         padding: 49px 120px 336px 49px;
     }
-    .auth {
-        top:  650px;
-    }
+    
     .card2 {
-        background-color: blue
+        background-color: blue;
     }
-    .section1 {
-        position: absolute;
-        margin-top: 30px;
+    .section2 {
+        flex-wrap: wrap;
     }
+   
     
 
     .b1 {
@@ -196,17 +352,38 @@ flex-shrink: 0;
     .nav{
         gap: 10px;
     }
-    /* .b4{
+ .b4{
     
         display: none;
-    } */
+    } 
 
 
 }
+@media screen and (max-width: 700px) {
+    .auth {
+        /* right:380px */
+        position: relative;
+        margin-left: -110%;
+        margin-top: 0;
+    }
+    .gap {
+        flex-wrap: wrap;
+    }
+
+    footer {
+        flex-wrap: wrap;
+    }
+    }
 
 
 
-   @media screen and (max-width:450px) {
+   @media screen and (max-width:550px) {
+    .auth {
+        /* right:380px */
+        position: relative;
+        margin-left: -150%;
+        margin-top: 0;
+    }
     .card2{
         display: none;
 
@@ -222,31 +399,27 @@ header {
     .nav{
         display: none;
     }
-    .auth{
-        top: 700px;
-        right: 80%;
-    }
+   
     .div {
         padding-left: 30px;
         text-align: center;
     }
-    .b4{
+    /* .b4{
         display: block;
         padding: 14px;
         background-color: blue;
         color: white;
         width:100px;
         margin-top: 15px;
-        /* position: relative;
+         position: relative;
         left: 360px;
-        bottom: 36px; */
+        bottom: 36px; 
         
          
-        
-    }
-    
-    .section1 {
-        position:absolute;
-    }
-   }
 
+    } */
+    
+    
+   
+   }
+   
